@@ -1,73 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Idil Can Tuncelli</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
+/* Genel ayarlar */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #0f2f2f;
+  color: #e2f4f4;
+  line-height: 1.6;
+}
 
-  <!-- Navbar -->
-  <nav>
-    <div><strong>Dr. Idil Can Tuncelli</strong></div>
-    <ul>
-      <li>Bio</li>
-      <li>Papers</li>
-      <li>Talks</li>
-      <li>News</li>
-      <li>Experience</li>
-      <li>Projects</li>
-      <li>Teaching</li>
-    </ul>
-  </nav>
+/* Navbar */
+nav {
+  background: #061818;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
 
-  <!-- Profile Card -->
-  <div class="profile-card">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <img src="profile.jpg" alt="Profile" class="profile-img" />
-      <h2>Dr. Idil Can Tuncelli</h2>
-      <p>PhD Researcher</p>
-      <p>Istanbul University</p>
-      <div class="social-icons">
-        <a href="mailto:idilcan@istanbul.edu.tr">📧</a>
-        <a href="https://scholar.google.com.tr/citations?user=LAJJtMMAAAAJ&hl=tr" target="_blank">🔍</a>
-        <a href="https://orcid.org/0000-0002-9999-6658" target="_blank">🧬</a>
-        <a href="https://avesis.istanbul.edu.tr/idilcan" target="_blank">🌐</a>
-      </div>
-    </div>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
 
-    <!-- Main Content -->
-    <div class="main-content">
-      <section>
-        <h1>About</h1>
-        <p>I am a PhD researcher at the Faculty of Aquatic Sciences, Istanbul University. My research interests include seafood processing technologies, seafood safety, environmental contamination, and microplastic risks in seafood. I work at the intersection of environmental health and aquatic food systems, with a strong focus on risk assessment, contaminant bioaccumulation, and quality indicators in processed seafood. I actively contribute to multidisciplinary scientific projects and publish extensively in SCI-Expanded journals.</p>
-        <a href="cv.pdf" class="btn" target="_blank">Download CV</a>
-      </section>
+nav ul li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
 
-      <section>
-        <h2>Publications</h2>
-        <p>Özden Ö., Can Tunçelli İ., Mammadova A., et al. (2025). <i>Toxic metal accumulation in Flexopecten glaber...</i> Marine Pollution Bulletin, 219.</p>
-        <p>Dağsuyu E., Can Tunçelli İ., et al. (2025). <i>Environmental stress responses to marine mucilage...</i> Environmental Pollution, 374.</p>
-        <p>Doğruyol H., Can Tunçelli İ., et al. (2025). <i>Bioaccumulation of mercury, cadmium, lead, and arsenic...</i> Food Science and Nutrition, 13(6).</p>
-        <p>Üçok D., Tuncelli I. C., et al. (2025). <i>Microbial seafood safety assessment...</i> Environmental Microbiology Reports, 17(1).</p>
-        <p>Tunçelli G., Ertik O., Tuncelli I. C., et al. (2025). <i>Influence of physical activity on metabolism...</i> Aquaculture Research, 1.</p>
-        <p>... (listeyi uzatabilirim)</p>
-      </section>
+nav ul li:hover {
+  color: #00ffee;
+}
 
-      <section>
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:idilcan@istanbul.edu.tr">idilcan@istanbul.edu.tr</a></p>
-        <p><strong>Address:</strong> Faculty of Aquatic Sciences, Istanbul University, Onaltı Mart Şehitleri Street No:2, Fatih / Istanbul</p>
-        <p>
-          <a href="https://avesis.istanbul.edu.tr/idilcan" target="_blank">AVESİS Profile</a> |
-          <a href="https://scholar.google.com.tr/citations?user=LAJJtMMAAAAJ&hl=tr" target="_blank">Google Scholar</a> |
-          <a href="https://orcid.org/0000-0002-9999-6658" target="_blank">ORCID</a>
-        </p>
-      </section>
-    </div>
-  </div>
-</body>
-</html>
+/* Ana profil kartı */
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Sol alan (profil) */
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #153838;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #00ffee;
+}
+
+.sidebar h2 {
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.sidebar p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #aeeeee;
+}
+
+/* Sosyal ikonlar */
+.social-icons a {
+  font-size: 1.4rem;
+  margin: 0 0.4rem;
+  text-decoration: none;
+  color: #e2f4f4;
+}
+
+.social-icons a:hover {
+  color: #00ffee;
+}
+
+/* Sağ içerik alanı */
+.main-content {
+  flex: 3;
+  min-width: 300px;
+}
+
+.main-content section {
+  background-color: #1b3c3c;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main-content h1, .main-content h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.main-content a {
+  color: #00ffee;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* CV butonu */
+.btn {
+  display: inline-block;
+  background-color: #00ffee;
+  color: #003333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+  color: #ffffff;
+}
