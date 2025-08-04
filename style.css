@@ -1,85 +1,73 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #e6f0fa, #d0e4f5);
-    color: #003366;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Idil Can Tuncelli</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-.container {
-    background-color: white;
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
-}
+  <!-- Navbar -->
+  <nav>
+    <div><strong>Dr. Idil Can Tuncelli</strong></div>
+    <ul>
+      <li>Bio</li>
+      <li>Papers</li>
+      <li>Talks</li>
+      <li>News</li>
+      <li>Experience</li>
+      <li>Projects</li>
+      <li>Teaching</li>
+    </ul>
+  </nav>
 
-h1, h2, h3, h4 {
-    color: #002b5c;
-}
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="profile.jpg" alt="Profile" class="profile-img" />
+      <h2>Dr. Idil Can Tuncelli</h2>
+      <p>PhD Researcher</p>
+      <p>Istanbul University</p>
+      <div class="social-icons">
+        <a href="mailto:idilcan@istanbul.edu.tr">📧</a>
+        <a href="https://scholar.google.com.tr/citations?user=LAJJtMMAAAAJ&hl=tr" target="_blank">🔍</a>
+        <a href="https://orcid.org/0000-0002-9999-6658" target="_blank">🧬</a>
+        <a href="https://avesis.istanbul.edu.tr/idilcan" target="_blank">🌐</a>
+      </div>
+    </div>
 
-h1 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
-}
+    <!-- Main Content -->
+    <div class="main-content">
+      <section>
+        <h1>About</h1>
+        <p>I am a PhD researcher at the Faculty of Aquatic Sciences, Istanbul University. My research interests include seafood processing technologies, seafood safety, environmental contamination, and microplastic risks in seafood. I work at the intersection of environmental health and aquatic food systems, with a strong focus on risk assessment, contaminant bioaccumulation, and quality indicators in processed seafood. I actively contribute to multidisciplinary scientific projects and publish extensively in SCI-Expanded journals.</p>
+        <a href="cv.pdf" class="btn" target="_blank">Download CV</a>
+      </section>
 
-h2 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    font-weight: normal;
-}
+      <section>
+        <h2>Publications</h2>
+        <p>Özden Ö., Can Tunçelli İ., Mammadova A., et al. (2025). <i>Toxic metal accumulation in Flexopecten glaber...</i> Marine Pollution Bulletin, 219.</p>
+        <p>Dağsuyu E., Can Tunçelli İ., et al. (2025). <i>Environmental stress responses to marine mucilage...</i> Environmental Pollution, 374.</p>
+        <p>Doğruyol H., Can Tunçelli İ., et al. (2025). <i>Bioaccumulation of mercury, cadmium, lead, and arsenic...</i> Food Science and Nutrition, 13(6).</p>
+        <p>Üçok D., Tuncelli I. C., et al. (2025). <i>Microbial seafood safety assessment...</i> Environmental Microbiology Reports, 17(1).</p>
+        <p>Tunçelli G., Ertik O., Tuncelli I. C., et al. (2025). <i>Influence of physical activity on metabolism...</i> Aquaculture Research, 1.</p>
+        <p>... (listeyi uzatabilirim)</p>
+      </section>
 
-h3 {
-    margin-top: 40px;
-    font-size: 1.3em;
-    border-bottom: 2px solid #d0e4f5;
-    padding-bottom: 4px;
-}
-
-h4 {
-    margin-top: 30px;
-    font-size: 1.15em;
-}
-
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #aacce7;
-}
-
-a {
-    color: #005cbf;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-ul {
-    text-align: left;
-    line-height: 1.6;
-    padding-left: 20px;
-}
-
-p {
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 15px;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-}
+      <section>
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:idilcan@istanbul.edu.tr">idilcan@istanbul.edu.tr</a></p>
+        <p><strong>Address:</strong> Faculty of Aquatic Sciences, Istanbul University, Onaltı Mart Şehitleri Street No:2, Fatih / Istanbul</p>
+        <p>
+          <a href="https://avesis.istanbul.edu.tr/idilcan" target="_blank">AVESİS Profile</a> |
+          <a href="https://scholar.google.com.tr/citations?user=LAJJtMMAAAAJ&hl=tr" target="_blank">Google Scholar</a> |
+          <a href="https://orcid.org/0000-0002-9999-6658" target="_blank">ORCID</a>
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
