@@ -1,20 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
+/* Genel gövde ayarları */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #0f2f2f;
-  color: #e2f4f4;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b2c3a; /* koyu mavi-yeşil ton */
+  color: #f1f1f1;
+  text-align: center;
   line-height: 1.6;
 }
 
-h1, h2 {
-  color: #ffffff;
+/* Konteyner */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
 }
 
+/* Profil fotoğrafı */
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3ca6a6;
+  margin-bottom: 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 2px solid #3ca6a6;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #cccccc;
+}
+
+/* Paragraflar */
+p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/* Yayınlar listesi */
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Bağlantılar */
 a {
-  color: #00ffee;
+  color: #88e2e2;
   text-decoration: none;
 }
 
@@ -22,42 +73,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #1b3c3c;
-  border-radius: 10px;
-}
-
-.profile-img {
-  width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 1rem auto;
-  border: 4px solid #00ffee;
-}
-
-h1 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.contact, .about, .publications, .others {
-  margin-bottom: 2rem;
-}
-
-.btn {
-  background-color: #00ffee;
-  color: #003333;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn:hover {
-  background-color: #00cccc;
-  color: white;
+/* İlgili bölümler için özel boşluklar */
+section {
+  margin-bottom: 40px;
 }
