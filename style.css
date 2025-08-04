@@ -1,133 +1,63 @@
-/* Genel ayarlar */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0;
   background: #0f2f2f;
   color: #e2f4f4;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
-/* Navbar */
-nav {
-  background: #061818;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+h1, h2 {
+  color: #ffffff;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-nav ul li:hover {
+a {
   color: #00ffee;
+  text-decoration: none;
 }
 
-/* Ana profil kartı */
-.profile-card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 2rem;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Sol alan (profil) */
-.sidebar {
-  flex: 1;
-  min-width: 250px;
-  background-color: #153838;
-  padding: 2rem;
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #1b3c3c;
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .profile-img {
   width: 150px;
-  height: 150px;
-  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto 1rem auto;
   border: 4px solid #00ffee;
 }
 
-.sidebar h2 {
-  margin: 0.5rem 0;
-  color: #ffffff;
+h1 {
+  text-align: center;
+  font-weight: 600;
 }
 
-.sidebar p {
-  margin: 0.3rem 0;
-  font-size: 0.95rem;
-  color: #aeeeee;
-}
-
-/* Sosyal ikonlar */
-.social-icons a {
-  font-size: 1.4rem;
-  margin: 0 0.4rem;
-  text-decoration: none;
-  color: #e2f4f4;
-}
-
-.social-icons a:hover {
-  color: #00ffee;
-}
-
-/* Sağ içerik alanı */
-.main-content {
-  flex: 3;
-  min-width: 300px;
-}
-
-.main-content section {
-  background-color: #1b3c3c;
-  padding: 1.5rem;
+.contact, .about, .publications, .others {
   margin-bottom: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.main-content h1, .main-content h2 {
-  color: #ffffff;
-  margin-top: 0;
-}
-
-.main-content a {
-  color: #00ffee;
-  text-decoration: none;
-}
-
-.main-content a:hover {
-  text-decoration: underline;
-}
-
-/* CV butonu */
 .btn {
-  display: inline-block;
   background-color: #00ffee;
   color: #003333;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
-  margin-top: 1rem;
+  display: inline-block;
   text-decoration: none;
   font-weight: 600;
 }
 
 .btn:hover {
   background-color: #00cccc;
-  color: #ffffff;
+  color: white;
 }
