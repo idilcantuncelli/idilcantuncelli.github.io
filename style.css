@@ -15,47 +15,73 @@ body {
   text-align: center;
 }
 
-/* Profil kutusu (resim + metin) */
+/* Profil alanı */
 .profile-container {
-  text-align: center;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
-/* Profil fotoğrafı */
+/* Profil resmi */
 .profile-img {
-  width: 320px;
-  height: 320px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #3ca6a6;
-  margin: 0 auto 20px auto;
-  display: block;
+  border: 6px solid #3ca6a6;
+  margin-bottom: 15px;
 }
 
-/* Profil metni */
+/* Profil yazıları */
 .profile-info {
-  color: white;
+  text-align: center;
+  margin-bottom: 10px;
   font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.profile-info h1 {
+  color: #ffffff;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  margin: 4px 0;
+}
+
+/* Sosyal medya ikonları */
+.icons {
+  font-size: 1.4em;
   margin-top: 10px;
 }
 
-/* Başlıklar */
-h1, h2, h3 {
-  color: #ffffff;
-  margin-bottom: 10px;
+.icons a {
+  text-decoration: none;
+  color: #e0f7fa;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
+.icons a:hover {
+  color: #00e5ff;
+}
+
+/* Başlıklar */
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
+  color: #ffffff;
   border-bottom: 2px solid #3ca6a6;
   padding-bottom: 5px;
+  margin-top: 50px;
   display: inline-block;
-  margin-top: 40px;
 }
 
 h3 {
   font-size: 1.3em;
   color: #cccccc;
+  margin-top: 30px;
 }
 
 /* Paragraflar */
@@ -90,19 +116,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Emoji ikonları */
-.icons {
-  font-size: 1.5em;
-  margin-top: 8px;
-}
-
-.icons a {
-  text-decoration: none;
-  color: #e0f7fa;
-  margin: 0 8px;
-  transition: color 0.3s;
-}
-
-.icons a:hover {
-  color: #00e5ff;
+/* Alt başlıklar arası boşluk */
+section {
+  margin-bottom: 40px;
 }
